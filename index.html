@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Card Design</title>
+  <style>
+    .flex {
+      display: flex;
+    }
+
+    .card-container {
+      display: flex;
+      overflow: hidden;
+      transition: transform 0.5s ease;
+    }
+
+    .card {
+      width: 306px;
+      height: 517px;
+      background-color: white;
+      border-radius: 10px;
+      padding: 20px;
+      box-sizing: border-box;
+      box-shadow: 0 0px 15px rgba(95, 92, 92, 0.742);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-left: 10px;
+      margin-right: 10px;
+      position: relative;
+    }
+
+    img{
+      width: 260px;
+      height: 437px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+    .image {
+      width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+      position: relative;
+    }
+
+    .image-overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 99%;
+      display: flex;
+      border-radius: 10px;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(0deg, rgba(57, 72, 103, 0.6), rgba(57, 72, 103, 0.6));
+      color: white;
+      text-align: center;
+      opacity: 0;
+      transition: opacity 0.3s ease;
+    }
+
+    .image-overlay-text {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .image:hover .image-overlay {
+      opacity: 1;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      width: 120px;
+      margin: 0 5px;
+    }
+
+    .green-button {
+      background-color: green;
+      color: white;
+    }
+
+    .gray-button {
+      background-color: gray;
+      color: white;
+    }
+
+    .slide-button-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    .slide-button {
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+      border: none;
+      margin: 0 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="flex">
+    <div class="card-container">
+      <div class="card">
+        <div class="image">
+          <img src="Rectangle 4.png" alt="Card Image">
+          <div class="image-overlay">
+            <span class="image-overlay-text">MINIMALIST</span>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="button green-button">Pesan</button>
+          <button class="button gray-button">Demo</button>
+        </div>
+      </div>
+      <div class="card">
+        <div class="image">
+          <img src="Rectangle 5.png" alt="Card Image">
+          <div class="image-overlay">
+            <span class="image-overlay-text">MINIMALIST</span>
+          </div>
+        </div>
+        <div class="button-container">
+          <button class="button green-button">Pesan</button>
+          <button class="button gray-button">Demo</button>
+        </div>
+      </div>
+      <div class="card">
+         <div class="image">
+           <img src="Rectangle 6.png" alt="Card Image">
+           <div class="image-overlay">
+             <span class="image-overlay-text">MINIMALIST</span>
+           </div>
+         </div>
+         <div class="button-container">
+           <button class="button green-button">Pesan</button>
+           <button class="button gray-button">Demo</button>
+         </div>
+       </div>
+       <div class="card">
+         <div class="image">
+           <img src="Rectangle 4.png" alt="Card Image">
+           <div class="image-overlay">
+             <span class="image-overlay-text">MINIMALIST</span>
+           </div>
+         </div>
+         <div class="button-container">
+           <button class="button green-button">Pesan</button>
+           <button class="button gray-button">Demo</button>
+         </div>
+       </div>
+       <div class="card">
+         <div class="image">
+           <img src="Rectangle 5.png" alt="Card Image">
+           <div class="image-overlay">
+             <span class="image-overlay-text">MINIMALIST</span>
+           </div>
+         </div>
+         <div class="button-container">
+           <button class="button green-button">Pesan</button>
+           <button class="button gray-button">Demo</button>
+         </div>
+       </div>
+       <div class="card">
+         <div class="image">
+           <img src="Rectangle 6.png" alt="Card Image">
+           <div class="image-overlay">
+             <span class="image-overlay-text">MINIMALIST</span>
+           </div>
+         </div>
+         <div class="button-container">
+           <button class="button green-button">Pesan</button>
+           <button class="button gray-button">Demo</button>
+         </div>
+       </div>
+       <div class="card">
+         <div class="image">
+           <img src="Rectangle 4.png" alt="Card Image">
+           <div class="image-overlay">
+             <span class="image-overlay-text">MINIMALIST</span>
+           </div>
+         </div>
+         <div class="button-container">
+           <button class="button green-button">Pesan</button>
+           <button class="button gray-button">Demo</button>
+         </div>
+       </div>
+       <div class="card">
+         <div class="image">
+           <img src="Rectangle 5.png" alt="Card Image">
+           <div class="image-overlay">
+             <span class="image-overlay-text">MINIMALIST</span>
+           </div>
+         </div>
+         <div class="button-container">
+           <button class="button green-button">Pesan</button>
+           <button class="button gray-button">Demo</button>
+         </div>
+       </div>
+      <!-- Add more cards here -->
+    </div>
+  </div>
+  <div class="slide-button-container">
+   <button class="slide-button" onclick="slideCards('left')">&#8249;</button>
+   <button class="slide-button" onclick="slideCards('right')">&#8250;</button>
+ </div>
+ <script>
+   const cardContainer = document.querySelector('.card-container');
+   const slideButtons = document.querySelectorAll('.slide-button');
+   const cardWidth = document.querySelector('.card').offsetWidth;
+   let cardIndex = 0;
+
+   function slideCards(direction) {
+     const cardCount = cardContainer.childElementCount;
+
+     if (direction === 'left' && cardIndex > 0) {
+       cardIndex--;
+     } else if (direction === 'right' && cardIndex < cardCount - 5) {
+       cardIndex++;
+     }
+
+     const translateX = -cardIndex * cardWidth;
+     cardContainer.style.transform = `translateX(${translateX}px)`;
+
+     toggleSlideButtons();
+   }
+
+   function toggleSlideButtons() {
+     slideButtons[0].disabled = cardIndex === 0;
+     slideButtons[1].disabled = cardIndex === cardContainer.childElementCount - 3;
+   }
+ </script>
+</body>
+</html>
